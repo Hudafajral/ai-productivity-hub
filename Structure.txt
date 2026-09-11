@@ -1,0 +1,279 @@
+.
+├── Structure.txt
+├── backend_app
+│   ├── .env
+│   ├── alembic
+│   ├── alembic.ini
+│   ├── app
+│   │   ├── __init__.py
+│   │   ├── api
+│   │   │   ├── dependencies.py
+│   │   │   └── v1
+│   │   │       ├── notebooks.py
+│   │   │       ├── notes.py
+│   │   │       └── schedules.py
+│   │   ├── core
+│   │   │   ├── config.py
+│   │   │   └── database.py
+│   │   ├── main.py
+│   │   ├── models
+│   │   │   ├── __init__.py
+│   │   │   ├── note.py
+│   │   │   ├── notebook.py
+│   │   │   └── schedule.py
+│   │   ├── schemas
+│   │   │   ├── __init__.py
+│   │   │   ├── note.py
+│   │   │   ├── notebook.py
+│   │   │   └── schedule.py
+│   │   └── services
+│   │       ├── gemini_api.py
+│   │       └── rag_engine.py
+│   └── requirements.txt
+├── gen_structure.py
+└── mobile_app
+    ├── .dart_tool
+    │   ├── flutter_build
+    │   │   ├── 0f1f0f64c3eafadc77edd2dad43a52db
+    │   │   │   ├── .filecache
+    │   │   │   ├── app.dill
+    │   │   │   ├── build_hooks.d
+    │   │   │   ├── build_hooks.stamp
+    │   │   │   ├── build_hooks_result.json
+    │   │   │   ├── debug_android_application.stamp
+    │   │   │   ├── flutter_assets.d
+    │   │   │   ├── gen_dart_plugin_registrant.stamp
+    │   │   │   ├── gen_localizations.stamp
+    │   │   │   ├── install_code_assets.d
+    │   │   │   ├── install_code_assets.stamp
+    │   │   │   ├── kernel_snapshot_program.d
+    │   │   │   ├── kernel_snapshot_program.stamp
+    │   │   │   ├── link_hooks.d
+    │   │   │   ├── link_hooks.stamp
+    │   │   │   ├── link_hooks_result.json
+    │   │   │   ├── native_assets.json
+    │   │   │   ├── outputs.json
+    │   │   │   └── recorded_uses.json
+    │   │   └── dart_plugin_registrant.dart
+    │   ├── package_config.json
+    │   ├── package_graph.json
+    │   └── version
+    ├── .env
+    ├── .flutter-plugins-dependencies
+    ├── .gitignore
+    ├── .idea
+    │   ├── libraries
+    │   │   ├── Dart_SDK.xml
+    │   │   └── KotlinJavaRuntime.xml
+    │   ├── modules.xml
+    │   ├── runConfigurations
+    │   │   └── main_dart.xml
+    │   └── workspace.xml
+    ├── .metadata
+    ├── README.md
+    ├── analysis_options.yaml
+    ├── android
+    │   ├── .gitignore
+    │   ├── .gradle
+    │   │   ├── 9.3.1
+    │   │   │   ├── checksums
+    │   │   │   │   ├── checksums.lock
+    │   │   │   │   ├── md5-checksums.bin
+    │   │   │   │   └── sha1-checksums.bin
+    │   │   │   ├── executionHistory
+    │   │   │   │   ├── executionHistory.bin
+    │   │   │   │   └── executionHistory.lock
+    │   │   │   ├── expanded
+    │   │   │   ├── fileChanges
+    │   │   │   │   └── last-build.bin
+    │   │   │   ├── fileHashes
+    │   │   │   │   ├── fileHashes.bin
+    │   │   │   │   ├── fileHashes.lock
+    │   │   │   │   └── resourceHashesCache.bin
+    │   │   │   ├── gc.properties
+    │   │   │   └── vcsMetadata
+    │   │   ├── buildOutputCleanup
+    │   │   │   ├── buildOutputCleanup.lock
+    │   │   │   ├── cache.properties
+    │   │   │   └── outputFiles.bin
+    │   │   ├── file-system.probe
+    │   │   ├── noVersion
+    │   │   │   └── buildLogic.lock
+    │   │   └── vcs-1
+    │   │       └── gc.properties
+    │   ├── .kotlin
+    │   │   └── sessions
+    │   ├── app
+    │   │   ├── build.gradle.kts
+    │   │   └── src
+    │   │       ├── debug
+    │   │       │   └── AndroidManifest.xml
+    │   │       ├── main
+    │   │       │   ├── AndroidManifest.xml
+    │   │       │   ├── java
+    │   │       │   │   └── io
+    │   │       │   │       └── flutter
+    │   │       │   │           └── plugins
+    │   │       │   │               └── GeneratedPluginRegistrant.java
+    │   │       │   ├── kotlin
+    │   │       │   │   └── com
+    │   │       │   │       └── example
+    │   │       │   │           └── mobile_app
+    │   │       │   │               └── MainActivity.kt
+    │   │       │   └── res
+    │   │       │       ├── drawable
+    │   │       │       │   └── launch_background.xml
+    │   │       │       ├── drawable-v21
+    │   │       │       │   └── launch_background.xml
+    │   │       │       ├── mipmap-hdpi
+    │   │       │       │   └── ic_launcher.png
+    │   │       │       ├── mipmap-mdpi
+    │   │       │       │   └── ic_launcher.png
+    │   │       │       ├── mipmap-xhdpi
+    │   │       │       │   └── ic_launcher.png
+    │   │       │       ├── mipmap-xxhdpi
+    │   │       │       │   └── ic_launcher.png
+    │   │       │       ├── mipmap-xxxhdpi
+    │   │       │       │   └── ic_launcher.png
+    │   │       │       ├── raw
+    │   │       │       │   ├── alarm_bell.mp3
+    │   │       │       │   ├── alarm_clock.mp3
+    │   │       │       │   └── alarm_digital.mp3
+    │   │       │       ├── values
+    │   │       │       │   └── styles.xml
+    │   │       │       └── values-night
+    │   │       │           └── styles.xml
+    │   │       └── profile
+    │   │           └── AndroidManifest.xml
+    │   ├── build.gradle.kts
+    │   ├── gradle
+    │   │   └── wrapper
+    │   │       ├── gradle-wrapper.jar
+    │   │       └── gradle-wrapper.properties
+    │   ├── gradle.properties
+    │   ├── gradlew
+    │   ├── gradlew.bat
+    │   ├── local.properties
+    │   ├── mobile_app_android.iml
+    │   └── settings.gradle.kts
+    ├── assets
+    │   └── audio
+    │       ├── alarm_bell.mp3
+    │       ├── alarm_clock.mp3
+    │       └── alarm_digital.mp3
+    ├── ios
+    │   ├── .gitignore
+    │   ├── Flutter
+    │   │   ├── AppFrameworkInfo.plist
+    │   │   ├── Debug.xcconfig
+    │   │   ├── Generated.xcconfig
+    │   │   ├── Release.xcconfig
+    │   │   ├── ephemeral
+    │   │   │   ├── .swift_pm.lock
+    │   │   │   ├── Packages
+    │   │   │   │   ├── .packages
+    │   │   │   │   └── FlutterGeneratedPluginSwiftPackage
+    │   │   │   │       ├── Package.swift
+    │   │   │   │       └── Sources
+    │   │   │   │           └── FlutterGeneratedPluginSwiftPackage
+    │   │   │   │               └── FlutterGeneratedPluginSwiftPackage.swift
+    │   │   │   ├── flutter_lldb_helper.py
+    │   │   │   ├── flutter_lldbinit
+    │   │   │   └── flutter_native_integration.env
+    │   │   └── flutter_export_environment.sh
+    │   ├── Runner
+    │   │   ├── AppDelegate.swift
+    │   │   ├── Assets.xcassets
+    │   │   │   ├── AppIcon.appiconset
+    │   │   │   │   ├── Contents.json
+    │   │   │   │   ├── Icon-App-1024x1024@1x.png
+    │   │   │   │   ├── Icon-App-20x20@1x.png
+    │   │   │   │   ├── Icon-App-20x20@2x.png
+    │   │   │   │   ├── Icon-App-20x20@3x.png
+    │   │   │   │   ├── Icon-App-29x29@1x.png
+    │   │   │   │   ├── Icon-App-29x29@2x.png
+    │   │   │   │   ├── Icon-App-29x29@3x.png
+    │   │   │   │   ├── Icon-App-40x40@1x.png
+    │   │   │   │   ├── Icon-App-40x40@2x.png
+    │   │   │   │   ├── Icon-App-40x40@3x.png
+    │   │   │   │   ├── Icon-App-60x60@2x.png
+    │   │   │   │   ├── Icon-App-60x60@3x.png
+    │   │   │   │   ├── Icon-App-76x76@1x.png
+    │   │   │   │   ├── Icon-App-76x76@2x.png
+    │   │   │   │   └── Icon-App-83.5x83.5@2x.png
+    │   │   │   └── LaunchImage.imageset
+    │   │   │       ├── Contents.json
+    │   │   │       ├── LaunchImage.png
+    │   │   │       ├── LaunchImage@2x.png
+    │   │   │       ├── LaunchImage@3x.png
+    │   │   │       └── README.md
+    │   │   ├── Base.lproj
+    │   │   │   ├── LaunchScreen.storyboard
+    │   │   │   └── Main.storyboard
+    │   │   ├── GeneratedPluginRegistrant.h
+    │   │   ├── GeneratedPluginRegistrant.m
+    │   │   ├── Info.plist
+    │   │   ├── Runner-Bridging-Header.h
+    │   │   └── SceneDelegate.swift
+    │   ├── Runner.xcodeproj
+    │   │   ├── project.pbxproj
+    │   │   ├── project.xcworkspace
+    │   │   │   ├── contents.xcworkspacedata
+    │   │   │   └── xcshareddata
+    │   │   │       ├── IDEWorkspaceChecks.plist
+    │   │   │       └── WorkspaceSettings.xcsettings
+    │   │   └── xcshareddata
+    │   │       └── xcschemes
+    │   │           └── Runner.xcscheme
+    │   ├── Runner.xcworkspace
+    │   │   ├── contents.xcworkspacedata
+    │   │   └── xcshareddata
+    │   │       ├── IDEWorkspaceChecks.plist
+    │   │       └── WorkspaceSettings.xcsettings
+    │   └── RunnerTests
+    │       └── RunnerTests.swift
+    ├── lib
+    │   ├── core
+    │   │   ├── api_client.dart
+    │   │   ├── constants.dart
+    │   │   └── theme.dart
+    │   ├── features
+    │   │   ├── home
+    │   │   │   └── screens
+    │   │   │       ├── main_navigation_screen.dart
+    │   │   │       └── profile_screen.dart
+    │   │   ├── notebook
+    │   │   │   ├── screens
+    │   │   │   │   ├── chat_screen.dart
+    │   │   │   │   └── document_upload_screen.dart
+    │   │   │   └── widgets
+    │   │   │       ├── chat_bubble_widget.dart
+    │   │   │       └── source_citation_widget.dart
+    │   │   ├── notes
+    │   │   │   ├── screens
+    │   │   │   │   ├── note_editor_screen.dart
+    │   │   │   │   └── note_list_screen.dart
+    │   │   │   └── widgets
+    │   │   │       └── block_builder_widget.dart
+    │   │   └── schedule
+    │   │       ├── screens
+    │   │       │   ├── add_schedule_screen.dart
+    │   │       │   ├── alarm_ring_screen.dart
+    │   │       │   └── schedule_agenda_screen.dart
+    │   │       └── widgets
+    │   │           └── schedule_card_widget.dart
+    │   ├── main.dart
+    │   ├── models
+    │   │   ├── note_model.dart
+    │   │   ├── notebook_model.dart
+    │   │   └── schedule_model.dart
+    │   ├── services
+    │   │   ├── alarm_service.dart
+    │   │   ├── api_service.dart
+    │   │   └── notification_service.dart
+    │   └── shared_widgets
+    ├── mobile_app.iml
+    ├── pubspec.lock
+    ├── pubspec.yaml
+    └── test
+        └── widget_test.dart

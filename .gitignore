@@ -1,0 +1,39 @@
+# Environment & Secrets (PENTING: Jangan sampai bocor)
+.env
+*.env
+backend_app/.env
+mobile_app/.env
+
+# Python & Virtualenv (Backend)
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+*.sqlite3
+
+# Flutter & Dart (Mobile)
+**/build/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/pubspec.lock
+
+# Android Build & Cache
+**/android/.gradle/
+**/android/local.properties
+**/android/app/build/
+**/android/.kotlin/
+**/android/captures/
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+
+# IDE Configs
+**/.idea/
+**/.vscode/
+*.iml
+*.iws
+*.ipr
+.DS_Store
